@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Form Filler (Random Test Data)",
+  "version": "1.0.0",
+  "description": "Detects form fields on any page and fills them with random test data.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Fill form with random data"
+  },
+  "commands": {
+    "fill-form": {
+      "suggested_key": {
+        "default": "Alt+Shift+F"
+      },
+      "description": "Fill form with random test data"
+    }
+  }
+}
